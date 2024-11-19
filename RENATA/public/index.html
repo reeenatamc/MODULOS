@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Payment Management System</h1>
+    <form id="paymentForm">
+        <input type="hidden" id="paymentId">
+        <input type="text" id="payerName" placeholder="Payer Name" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="date" id="paymentDate" required>
+        <button type="submit">Save Payment</button>
+    </form>
+    <table id="paymentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Payer Name</th>
+                <th>Amount</th>
+                <th>Payment Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
