@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Obras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Barra lateral -->
+    <div class="sidebar">
+      <h2>Lista de Obras</h2>
+      <ul id="obraList">
+        <!-- Items dinámicos aquí -->
+      </ul>
+      <button id="refreshBtn">Actualizar Lista</button>
+    </div>
+
+    <!-- Sección principal -->
+    <div class="main">
+      <h1>Gestión de Obras</h1>
+      <form id="obraForm">
+        <input type="hidden" id="obraId">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" placeholder="Escribe el título de la obra" required>
+        
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" rows="4" placeholder="Describe brevemente la obra" required></textarea>
+        
+        <label for="imagen_url">URL de Imagen:</label>
+        <input type="text" id="imagen_url" placeholder="Inserta la URL de la imagen" required>
+        
+        <div class="buttons">
+          <button type="submit">Publicar</button>
+          <button type="button" id="editBtn">Editar</button>
+          <button type="button" id="deleteBtn">Eliminar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
